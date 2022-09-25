@@ -13,6 +13,7 @@
 		12B9A96A28E0DE9E003D69D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12B9A96828E0DE9E003D69D6 /* Main.storyboard */; };
 		12B9A96C28E0DEA1003D69D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12B9A96B28E0DEA1003D69D6 /* Assets.xcassets */; };
 		12B9A96F28E0DEA1003D69D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12B9A96D28E0DEA1003D69D6 /* LaunchScreen.storyboard */; };
+		AAF303FAE1DA27C5C3AFDD5E /* Pods_SquareGame1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37275ADE5702FDDB099F64C0 /* Pods_SquareGame1.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		12B9A96B28E0DEA1003D69D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12B9A96E28E0DEA1003D69D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12B9A97028E0DEA1003D69D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37275ADE5702FDDB099F64C0 /* Pods_SquareGame1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquareGame1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F85D0B7095986DA49A17600 /* Pods-SquareGame1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareGame1.release.xcconfig"; path = "Target Support Files/Pods-SquareGame1/Pods-SquareGame1.release.xcconfig"; sourceTree = "<group>"; };
+		E9F4E24D3576E7B25F394CDC /* Pods-SquareGame1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareGame1.debug.xcconfig"; path = "Target Support Files/Pods-SquareGame1/Pods-SquareGame1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAF303FAE1DA27C5C3AFDD5E /* Pods_SquareGame1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05A92674AC856473FDAB41CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37275ADE5702FDDB099F64C0 /* Pods_SquareGame1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		12B9A95628E0DE9E003D69D6 = {
 			isa = PBXGroup;
 			children = (
 				12B9A96128E0DE9E003D69D6 /* SquareGame1 */,
 				12B9A96028E0DE9E003D69D6 /* Products */,
+				61EB080F8E7926BE13A2B790 /* Pods */,
+				05A92674AC856473FDAB41CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = SquareGame1;
 			sourceTree = "<group>";
 		};
+		61EB080F8E7926BE13A2B790 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9F4E24D3576E7B25F394CDC /* Pods-SquareGame1.debug.xcconfig */,
+				3F85D0B7095986DA49A17600 /* Pods-SquareGame1.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12B9A97328E0DEA1003D69D6 /* Build configuration list for PBXNativeTarget "SquareGame1" */;
 			buildPhases = (
+				60ED6DDFF99552A756F0EDC0 /* [CP] Check Pods Manifest.lock */,
 				12B9A95B28E0DE9E003D69D6 /* Sources */,
 				12B9A95C28E0DE9E003D69D6 /* Frameworks */,
 				12B9A95D28E0DE9E003D69D6 /* Resources */,
+				3D8BECF7108E090F3B033E98 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D8BECF7108E090F3B033E98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SquareGame1/Pods-SquareGame1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SquareGame1/Pods-SquareGame1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SquareGame1/Pods-SquareGame1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60ED6DDFF99552A756F0EDC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SquareGame1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		12B9A95B28E0DE9E003D69D6 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		12B9A97428E0DEA1003D69D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9F4E24D3576E7B25F394CDC /* Pods-SquareGame1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		12B9A97528E0DEA1003D69D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F85D0B7095986DA49A17600 /* Pods-SquareGame1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
